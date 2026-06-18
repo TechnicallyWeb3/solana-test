@@ -1,0 +1,9 @@
+node_modules/
+target/
+.env
+*.so
+.DS_Store
+dist/
+test-ledger/
+.solana/
+*-keypair.json

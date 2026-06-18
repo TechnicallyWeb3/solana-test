@@ -1,0 +1,10 @@
+{
+  "name": "@hello-world/program",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "cargo build-sbf --arch v3",
+    "deploy:devnet": "node ../../scripts/deploy.js devnet",
+    "deploy:mainnet": "node ../../scripts/deploy.js mainnet-beta"
+  }
+}
