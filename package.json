@@ -5,8 +5,9 @@
     "packages/*"
   ],
   "scripts": {
-    "generate-key": "node scripts/generate-key.js",
-    "rotate-key": "node scripts/generate-key.js --rotate",
+    "key:generate": "node scripts/generate-key.js",
+    "key:force": "node scripts/generate-key.js --force",
+    "key:rotate": "node scripts/generate-key.js --rotate",
     "build": "npm run build --workspace=@hello-world/program",
     "deploy:devnet": "npm run deploy:devnet --workspace=@hello-world/program",
     "deploy:mainnet": "npm run deploy:mainnet --workspace=@hello-world/program"
