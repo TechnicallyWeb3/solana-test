@@ -161,16 +161,16 @@ For production workloads, use a dedicated RPC provider (Helius, QuickNode, etc.)
 
 ```
 ┌─────────────┐     cargo build-sbf      ┌──────────────┐
-│  lib.rs     │ ───────────────────────► │ hello_world.so│
-│  (Rust)     │                            │  (BPF binary) │
-└─────────────┘                            └──────┬───────┘
-                                                  │
-                     solana program deploy        │
-                     (signed by deployer)         ▼
-                                          ┌───────────────┐
-                                          │ Solana cluster│
-                                          │ (devnet/main) │
-                                          └───────────────┘
+│   lib.rs    │ ───────────────────────► │hello_world.so│
+│   (Rust)    │                          │ (BPF binary) │
+└─────────────┘                          └──────┬───────┘
+                                                │
+                     solana program deploy      │
+                     (signed by deployer)       ▼
+                                        ┌───────────────┐
+                                        │ Solana cluster│
+                                        │ (devnet/main) │
+                                        └───────────────┘
 ```
 
 1. **Compile** — Rust source is compiled to Solana Bytecode Format (SBF), a restricted environment that runs inside the Solana runtime.
